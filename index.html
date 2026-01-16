@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geomertic solution</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="m-8">
+    <header  >
+        <nav class="flex justify-between items-center mb-8 flex-col md:flex-row">
+            <h1>Interactive  Geomertic genius</h1>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">blog</button>
+        </nav>
+        
+    </header>
+    <main>
+            <!--main container-->
+            <div class="flex flex-col md:flex-row">
+                <div class="flex-1 grid gird-cols-1 md:grid-cols-2 grid-cols-3 ">
+                    <!--image section-->
+                    <div class="card bg-base-100 w-96 shadow-sm">
+  <figure>
+    <img
+      src="images/triangle.png"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">triangle</h2>
+    <p>Area (A) = 0.5 × b × h</p>
+    <div class="card-actions justify-end">
+        <input type="number" id="base" placeholder="Base">
+       <input type="number" id="height" placeholder="Height">
+       <p id="result"></p>
+      <button onclick="area()" class="btn btn-primary">calculate</button>
+     
+    </div>
+  </div>
+</div>
+<div class="card bg-base-100 w-96 shadow-sm">
+  <figure>
+    <img
+      src="images/rectangle.png"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">rectangle</h2>
+    <p>Area (A) = l × w</p>
+    <div class="card-actions justify-end">
+         <input type="number" id="length" placeholder="Length">
+  <input type="number" id="width" placeholder="Width">
+  
+ 
+   <br><br>
+      
+        <p id="rectangleResult"></p>
+        <button onclick="rectangle()" class="btn btn-primary">calculate</button>
+
+
+    </div>
+  </div>
+</div>
+<div class="card bg-base-100 w-96 shadow-sm">
+  <figure>
+    <img
+      src="images/ellipse.png"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">ellipse</h2>
+    <p>Area (A) = π × a × b</p>
+    <div class="card-actions justify-end">
+        <input type="number" id="ellipseA" placeholder="a">
+<input type="number" id="ellipseB" placeholder="b">
+<button onclick="calculateEllipse()" class="btn btn-primary">calculate</button>
+<p id="ellipseResult"></p>
+         
+      
+    </div>
+  </div>
+</div>
+<div class="card bg-base-100 w-96 shadow-sm">
+  <figure>
+    <img
+      src="images/parallelogram.png"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">parallelogram</h2>
+    <p>Area (A) = b × h</p>
+    <div class="card-actions justify-end">
+        <input type="number" id="paraBase" placeholder="Base">
+        <input type="number" id="paraHeight" placeholder="Height">
+<button onclick="calculateParallelogram()" class="btn btn-primary">Calculate Parallelogram</button>
+<p id="paraResult"></p>
+
+      
+    </div>
+  </div>
+</div>
+<div class="card bg-base-100 w-96 shadow-sm">
+  <figure>
+    <img
+      src="images/pentagon.png"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">pentagon</h2>
+    <p>Area (A) = 0.25 × √(25 + 10√5) × s²</p>
+    <div class="card-actions justify-end">
+        <input type="number" id="pentagonSide" placeholder="Side">
+<button onclick="calculatePentagon()" class="btn btn-primary">calculate</button>
+<p id="pentagonResult"></p>
+      
+    </div>
+  </div>
+</div>
+<div class="card bg-base-100 w-96 shadow-sm">
+  <figure>
+    <img
+      src="images/rhombus.png"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">rhombus</h2>
+    <p>Area (A) = 0.5 × d₁ × d₂</p>
+    <div class="card-actions justify-end">
+  <input type="number" id="rhombusD1" placeholder="Diagonal 1">
+<input type="number" id="rhombusD2" placeholder="Diagonal 2">
+<button onclick="calculateRhombus()" class="btn btn-primary">Calculate </button>
+<p id="rhombusResult"></p>
+      
+    </div>
+  </div>
+</div>
+
+
+                </div>
+               <div class="w-96 border-2 border-gray-700">
+                <!--text section-->
+                <h3 class="text-3xl text-center p-4 m-4">Area calculation</h3>
+               </div>
+
+        </main>
+        <script src="scripts/triangle.js"></script>
+        <script src="scripts/rectangle.js"></script>
+        <script src="scripts/ellipse.js"></script>
+        <script src="pentagon.js"></script>
+        <script src="parallelogram.js"></script>
+        <script src="rhombus.js"></script>
+</body>
+</html>
